@@ -1,0 +1,32 @@
+[project]
+name = "adventofcode"
+version = "0.1.0"
+description = "Advent of Code."
+authors = [
+    { name = "gplatz", email = "36087062+GPla@users.noreply.github.com" },
+]
+dependencies = []
+readme = "README.md"
+requires-python = ">= 3.11"
+
+[tool.rye]
+managed = true
+virtual = true
+dev-dependencies = ["ipykernel>=6.29.5"]
+
+[tool.black]
+line-length = 79
+skip-string-normalization = true
+
+[tool.ruff]
+target-version = "py310"
+line-length = 79
+
+[tool.ruff.format]
+quote-style = "single"
+
+[tool.ruff.lint.pydocstyle]
+convention = "google"
+
+[tool.ruff.lint.isort]
+force-single-line = true
